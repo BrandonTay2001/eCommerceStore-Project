@@ -1,0 +1,305 @@
+/* Brandon Tay Jian Wei (3035767102) */
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+#headingComponent {
+  display: inline-flex;
+  margin-left: 50px;
+  justify-content: left;
+  margin-top: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#categories {
+  display: flex;
+}
+
+.buttonClicked, #buttonBelow, #searchButton, #return {
+  display: inline-block;
+  padding:0.3em 1.2em;
+  margin:0 0.3em 0.3em 0;
+  border-radius:2em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#FFFFFF;
+  background-color:#1C6EA4;
+  text-align:center;
+  transition: all 0.2s;
+}
+
+#signOut {
+  margin-left: 0px;
+  position: relative;
+  float: right;
+}
+
+#signInHome {
+  margin-left: 800px;
+  position: relative;
+  float: right;
+  height: 80%;
+}
+
+#prodSpace {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+#addedWrapper {
+  margin-left: 50px;
+}
+
+#sideOfImg {
+  margin-left: 200px;
+}
+
+.buttonClicked:hover, #buttonBelow:hover, #searchButton:hover, #return:hover {
+  background-color:#04314b;
+}
+
+.categoryText {
+  margin-right: 5px;
+  margin-top: 0px;
+}
+
+#cartWrap {
+  position: absolute;
+  left: 30%;
+  top: 100px;
+}
+
+#cart, #total {
+  margin: 0 auto;
+}
+
+.categoryText:hover {
+  text-decoration: underline;
+  text-decoration-color: #1C6EA4;
+}
+
+.product {
+  margin: auto;
+  margin-bottom: 20px;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.product:hover {
+  border-style: dotted;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#products {
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-left: 95px;
+}
+
+#loginSpace {
+  margin: auto;
+  border-style: solid;
+}
+
+#cartIcon {
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 75%;
+}
+
+#cartArea {
+  display: flex;
+}
+
+#headingText {
+  height: 70%;
+}
+
+#inCartText, #greetingText {
+  margin-top: 0px;
+}
+
+#inCartText {
+  margin-left: 5px;
+  margin-right: 20px;
+}
+
+#greetingText {
+  float: right;
+  margin-right: 5px;
+  margin-left: 500px;
+}
+
+#loginVariable {
+  display: inline-flex;
+}
+
+.usernameSpace {
+  margin: auto;
+}
+
+.headingText {
+  top: 10px;
+}
+
+.prodDetails {
+  padding-left: 20px;
+}
+
+#innerQty {
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+}
+
+#qtySelect {
+  border-style: solid;
+  border-color: #04314b;
+  -webkit-box-shadow: 4px 5px 12px 1px rgba(0,0,0,0.68); 
+  box-shadow: 4px 5px 12px 1px rgba(0,0,0,0.68);
+  border-style: inset;
+}
+
+#addToCartBtn {
+  margin-left: 5px;
+}
+
+.buttonBelowWrap {
+  position: fixed;
+  bottom: 50px;
+  margin-left: 50px;
+}
+
+.paidButton {
+  position: fixed;
+  bottom: 50px;
+  left: 50px
+}
+
+#return {
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+}
+
+.signInWrap {
+  margin-top: 20px;
+}
+
+.loginSpaceWrap {
+  margin-left: 20px;
+  position: fixed;
+  top: 200px;
+  left: 40%;
+}
+
+#loginSpace {
+  padding: 20px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  #signInHome {
+    margin-left: 170px;
+  }
+
+  #signOut {
+    margin-left: 0px;
+  }
+
+  #greetingText {
+    margin-left: 170px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  #signOut, #signInHome {
+    margin-left: 0px;
+  }
+
+  #headingComponent {
+    display: block;
+  }
+
+  #greetingDiv {
+    all: none;
+  }
+
+  #prodSpace {
+    display: inline;
+  }
+
+  #sideOfImg {
+    margin-left: 50px;
+  }
+
+  #qtySelect {
+    width: 45%;
+  }
+
+  #cartWrap {
+    left: 20%;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  #cartWrap {
+    left: 5%;
+    top: 170px;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  #signOut {
+    margin-left: 0px;
+  }
+
+  #greetingText {
+    margin-left: 0px;
+  }
+}
